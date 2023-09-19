@@ -1,0 +1,91 @@
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #nav1{
+        height: 60px;
+        background-color: #131921;
+        background-image: url(../img/Screenshot\ 2023-09-19\ at\ 15-30-26\ Amazon\ Basics.png);
+        background-size: cover;
+    }
+
+
+    #nav2{
+
+        height: 39px;
+     background-image: url(../img/Screenshot\ 2023-09-19\ at\ 15-41-58\ Amazon.png);
+     background-size: cover;
+    }
+
+    #nav3{
+        height: 95px;
+        background-color: white;
+        border-bottom: 5px solid #d5dbdb;
+        width: 100%;
+        margin-bottom: 20px;
+        background-image: url(../img/Screenshot\ 2023-09-19\ at\ 15-38-54\ Amazon\ Basics.png);
+        background-size: cover;
+    }
+
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #wrapper{
+        width: 100%;
+
+    }
+
+    #contentcontainer{
+        margin-left: 25px;
+        margin-right: 25px ;
+    }
+
+
+    #gallerywrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 15px;
+    }
+
+    .item {
+        text-align: center;
+        min-height: 300px;
+        min-width: 300px;
+        background-image: url(../img/imgg2.jpg);
+        transition-timing-function: ease-in-out;
+    }
+
+    .item:hover{
+        transform: scale(1.009);
+    }
+
+
+    #first{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url(../img/imgg1.jpg);
+    }
+    #secound{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3   ;
+        grid-row-end: 5;
+        background-image: url(../img/imgg1.jpg);
+    }
+    #thrid{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        background-image: url(../img/imgg1.jpg);
+    }
