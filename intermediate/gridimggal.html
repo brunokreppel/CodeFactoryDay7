@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gridimgal.css">
+</head>
+<body>
+    <div class="container">
+    <div class="item" id="first"></div>
+    <div class="item" id="secound" ></div>
+    <div class="item" id="third"></div>
+    <div class="item" id="fourth"></div>
+    <div class="item" id="fifth"></div>
+    <div class="item" id="sixth"></div>
+</div>
+<script>
+    const container = document.querySelector('.container');
+    
+    // Function to handle the scroll event
+    function parallaxBackground() {
+      const scrollY = window.scrollY;
+      container.style.backgroundPositionY = `${scrollY * 0.2}px`; // Adjust the scroll speed by changing the multiplier (0.2 in this case)
+    }
+    
+    // Attach the scroll event listener to the window
+    window.addEventListener('scroll', parallaxBackground);
+  </script>
+</body>
+</html>

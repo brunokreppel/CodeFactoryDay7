@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            grid-gap: 10px; /* Adjust the gap between grid items */
+            max-width: 800px; /* Adjust the maximum width of the grid */
+        }
+
+        .grid-item {
+            background-color: lightgray; /* Optional: Style the grid items as needed */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-container {
+            grid-column: 1 / -1; /* Span across all columns */
+        }
+
+        img {
+            width: 100%; /* Ensure the image covers the entire container */
+            height: auto;
+        }
+    </style>
+    <title>Split Image Across Grid Containers</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <div class="image-container">
+        <img src="intermediate/img/photo-1589802829985-817e51171b92.jpeg" alt="Your Image">
+    </div>
+</body>
+</html>
